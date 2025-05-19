@@ -232,7 +232,8 @@ public abstract class AbstractCamelCatalog {
         for (Map.Entry<String, String> property : properties.entrySet()) {
             String value = property.getValue();
             String originalName = property.getKey();
-            // the name may be using an optional prefix, so lets strip that because the options
+            // the name may be using an optional prefix
+            // so lets strip that because the options
             // in the schema are listed without the prefix
             String name = stripOptionalPrefixFromName(rows, originalName);
             // the name may be using a prefix, so lets see if we can find the real property name
