@@ -240,7 +240,9 @@ public abstract class AbstractCamelCatalog {
             if (propertyName != null) {
                 name = propertyName;
             }
-            BaseOptionModel row = rows.get(name);
+
+
+              BaseOptionModel row = rows.get(name);
             if (row == null) {
                 // unknown option
 
