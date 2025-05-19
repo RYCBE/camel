@@ -294,7 +294,8 @@ public abstract class AbstractCamelCatalog {
                     result.addDefaultValue(name, defaultValue.toString());
                 }
 
-                // is required but the value is empty
+                // is required 
+                // but the value is empty
                 if (row.isRequired() && CatalogHelper.isEmpty(value)) {
                     result.addRequired(name);
                 }
